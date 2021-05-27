@@ -10,3 +10,4 @@ https://grafikart.fr/formations/php
 Mémo :
 Current video : https://www.youtube.com/watch?v=HgIlzi6QzSc
 Time : 12:10
+TODO : modifier fonction creneaux_html pour afficher les horaires sur la page contact
