@@ -9,4 +9,4 @@ https://grafikart.fr/formations/php
 
 Mémo :
 Current video : https://www.youtube.com/watch?v=HgIlzi6QzSc
-Time : 12:10
+Time : 19:28
