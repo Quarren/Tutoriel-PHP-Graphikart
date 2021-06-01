@@ -9,6 +9,7 @@ define('JOURS', [
     'Dimanche'
 ]);
 
+
 define('CRENEAUX', [
     [
         [8, 12],
@@ -32,4 +33,11 @@ define('CRENEAUX', [
     [],
     []
 ]);
+
+/*
+define ('CRENEAUX', [
+    [8, 12],
+    [14, 19]
+]);
+*/
 ?>
