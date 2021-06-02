@@ -9,4 +9,5 @@ https://grafikart.fr/formations/php
 
 Mémo :
 Current video : https://www.youtube.com/watch?v=HgIlzi6QzSc
-Time : 19:28
+Time : 38:40
+TODO : corriger le dernier exo pratique
