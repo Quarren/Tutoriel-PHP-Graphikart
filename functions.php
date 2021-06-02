@@ -16,4 +16,12 @@ function creneaux_html (array $creneaux) {
     }
     return 'Ouvert ' . implode(' et ', $phrases);
 }
+
+function in_creneaux(int $heure, array $creneaux) {
+    if ($heure >= $creneaux[0] && $heure < $creneaux[1]) {
+        return true;
+    } else {
+        return false;
+    }
+}
 ?>
