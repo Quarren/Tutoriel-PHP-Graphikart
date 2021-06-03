@@ -1,4 +1,5 @@
 <?php
+// test : ne devrait apparaître que dans la branche correction
 define('JOURS', [
     'Lundi',
     'Mardi',
