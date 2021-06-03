@@ -19,7 +19,7 @@ $color = $ouvert ? 'green' : 'red';
     </div>
 
     <div class='col-md-8'>
-        <form action='/contact.php' method='GET'>  
+        <form action="" method='GET'>  
             <div class="form-group" id='jour'>
                 <h2>Jour</h2>
                 <select name='jour' id='jour-select'>
@@ -44,31 +44,35 @@ $color = $ouvert ? 'green' : 'red';
     </div>
 
     <?php
-    $creneaux_form = CRENEAUX[array_search($_GET["jour"], JOURS)];
-    $est_ouvert = (in_creneaux($_GET["heure"], $creneaux_form[0]) || in_creneaux($_GET["heure"], $creneaux_form[1]));
-    ?>
+    if (isset($_GET['heure'])):
 
-    <div class='col-md-8'>
-        <?php if ($est_ouvert) : ?>
-            <div class="alert alert-success">
-                Le magasin est ouvert le <?= $_GET["jour"] ?> à <?= $_GET["heure"] ?>h.
-            </div>
-        <?php else : ?>
-            <div class="alert alert-danger">
-                Le magasin est fermé le <?= $_GET["jour"] ?> à <?= $_GET["heure"] ?>h.
-            </div>
-        <?php endif ?>
-    </div>
+            $creneaux_form = CRENEAUX[array_search($_GET["jour"], JOURS)];
+            $est_ouvert = (in_creneaux($_GET["heure"], $creneaux_form[0]) || in_creneaux($_GET["heure"], $creneaux_form[1]));
+        ?>
+
+        <div class='col-md-8'>
+            <?php if ($est_ouvert) : ?>
+                <div class="alert alert-success">
+                    Le magasin est ouvert le <?= $_GET["jour"] ?> à <?= $_GET["heure"] ?>h.
+                </div>
+            <?php else : ?>
+                <div class="alert alert-danger">
+                    Le magasin est fermé le <?= $_GET["jour"] ?> à <?= $_GET["heure"] ?>h.
+                </div>
+            <?php endif ?>
+        </div>
+
+    <?php endif; ?>
 
     <div class="col-md-4">
         <h2>Horaires d'ouverture</h2>
         <?php if ($ouvert): ?>
         <div class="alert alert-success">
-            Le magasin est ouvert
+            Le magasin sera ouvert
         </div>
         <?php else: ?>
         <div class="alert alert-danger">
-            Le magasin est fermé
+            Le magasin sera fermé
         </div>
         <?php endif ?>
         <ul>
