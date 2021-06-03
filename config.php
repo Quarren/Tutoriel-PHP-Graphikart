@@ -1,4 +1,5 @@
 <?php
+// ceci est un test des branches git
 define('JOURS', [
     'Lundi',
     'Mardi',
