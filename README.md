@@ -1,5 +1,7 @@
 # Tutoriel-PHP-Graphikart
 
+Branche correction : reprend le code expliqué dans le tutoriel
+
 Objectifs :
 - garder une trace de mon apprentissage de PHP
 - apprendre à utiliser git et github
